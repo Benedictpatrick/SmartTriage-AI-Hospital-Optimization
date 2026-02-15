@@ -1,0 +1,108 @@
+{
+  "rule_based_accuracy": 0.652,
+  "ml_accuracy": 1.0,
+  "hybrid_accuracy": 0.7966,
+  "risk_classifier": {
+    "cv_accuracy_mean": 0.9672,
+    "cv_accuracy_std": 0.0043,
+    "cv_f1_macro_mean": 0.9703,
+    "train_accuracy": 1.0,
+    "per_class_metrics": {
+      "Low": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "Medium": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "High": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "Critical": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    },
+    "auc_roc": {
+      "Low": 1.0,
+      "Medium": 1.0,
+      "High": 1.0,
+      "Critical": 1.0
+    },
+    "confusion_matrix": [
+      [
+        1176,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1501,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1508,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        815
+      ]
+    ]
+  },
+  "dept_classifier": {
+    "cv_accuracy_mean": 0.9986,
+    "cv_accuracy_std": 0.0005,
+    "train_accuracy": 1.0,
+    "departments": [
+      "Cardiology",
+      "Gastroenterology",
+      "Infectious Disease",
+      "Neurology",
+      "Pulmonology",
+      "Surgery"
+    ]
+  },
+  "fairness": {
+    "gender_risk_distribution": {
+      "Male": {
+        "Low": 0.229,
+        "Medium": 0.2933,
+        "High": 0.3127,
+        "Critical": 0.1651
+      },
+      "Female": {
+        "Low": 0.2468,
+        "Medium": 0.3074,
+        "High": 0.29,
+        "Critical": 0.1558
+      },
+      "Other": {
+        "Low": 0.2,
+        "Medium": 0.3125,
+        "High": 0.2833,
+        "Critical": 0.2042
+      }
+    },
+    "age_group_fpr": {
+      "18-30": 0.0,
+      "31-50": 0.0,
+      "51-65": 0.0,
+      "65+": 0.0
+    },
+    "statistical_parity_diff": 0.0178,
+    "equalized_odds_diff": 0.0
+  }
+}
